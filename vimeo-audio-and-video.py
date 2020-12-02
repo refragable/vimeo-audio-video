@@ -88,6 +88,7 @@ for line in open(args.url_list):
     cmd += filenameAudio
     cmd += ' -i '
     cmd += filenameVideo
+    cmd += ' -c copy'
     cmd += ' ' + output_file
     subprocess.call(cmd, shell=True)
     print('Mixing Done!')
